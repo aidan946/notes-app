@@ -12,21 +12,26 @@
   "dependencies": {
     "@nuxt/eslint": "1.7.1",
     "@nuxt/icon": "1.15.0",
-    "@nuxtjs/supabase": "1.6.0",
+    "@nuxtjs/supabase": "^2.0.9",
+    "@supabase/supabase-js": "^2.108.0",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@tailwindcss/vite": "^4.1.11",
-    "@tiptap/pm": "^3.0.7",
-    "@tiptap/starter-kit": "^3.0.7",
-    "@tiptap/vue-3": "^3.0.7",
-    "daisyui": "^5.0.50",
-    "eslint": "^9.0.0",
-    "nuxt": "^4.0.1",
-    "tailwindcss": "^4.1.11",
-    "vue": "^3.5.18",
-    "vue-draggable-plus": "^0.6.0",
-    "vue-router": "^4.5.1"
+    "@tailwindcss/vite": "^4.3.0",
+    "@tiptap/extension-highlight": "^3.26.0",
+    "@tiptap/extension-task-item": "^3.26.0",
+    "@tiptap/extension-task-list": "^3.26.0",
+    "@tiptap/pm": "^3.26.0",
+    "@tiptap/starter-kit": "^3.26.0",
+    "@tiptap/vue-3": "^3.26.0",
+    "daisyui": "^5.5.23",
+    "eslint": "^9.39.4",
+    "nuxt": "^4.4.8",
+    "tailwindcss": "^4.3.0",
+    "vue": "^3.5.35",
+    "vue-draggable-plus": "^0.6.1",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16"
+    "@tailwindcss/typography": "^0.5.20",
+    "sass-embedded": "^1.100.0"
   }
 }
