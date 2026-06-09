@@ -1,5 +1,5 @@
 <template>
-  <div class="card-compact rounded-lg w-96 bg-neutral text-neutral-content">
+  <div class="card card-sm rounded-lg w-96 bg-neutral text-neutral-content">
     <div class="card-body">
       <div class="relative">
         <h1 class="text-2xl">
@@ -47,7 +47,7 @@
                 class="btn btn-sm btn-error rounded-lg mr-0 ml-auto"
                 @click="deleteTag(tag.id)"
               >
-                <i class="ri-delete-bin-7-fill"></i>
+                <Icon name="ri:delete-bin-7-fill" />
               </button>
             </div>
           </li>
@@ -96,4 +96,3 @@ async function deleteTag(id: number) {
   }
 }
 </script>
-

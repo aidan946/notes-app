@@ -8,16 +8,16 @@
         <div class="flex min-h-screen justify-center items-center ml-auto mr-auto">
           <div class="form-widget card bg-neutral shadow-2xl">
             <div class="card-body">
-              <input v-model="email" class="input input-bordered w-full max-w-xs" type="email" placeholder="Your email" />
+              <input v-model="email" class="input" type="email" placeholder="Your email" />
               <br />
-              <input v-model="password" class="input input-bordered w-full max-w-xs" type="password"
+              <input v-model="password" class="input" type="password"
                 placeholder="Your password" />
               <br />
               <span class="text-error">{{ supabaseError }}</span>
 
               <div class="card-actions">
-                <button class="btn btn-primary" @click="login">Login</button>
-                <button class="btn btn-outline btn-primary ml-2" @click="signup">
+                <button class="btn btn-primary" type="submit">Login</button>
+                <button class="btn btn-outline btn-primary ml-2" type="button" @click="signup">
                   Sign Up
                 </button>
               </div>

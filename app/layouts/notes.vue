@@ -19,7 +19,7 @@
         bg-gray-700 bg-opacity-50
         z-10"
       >
-        <div class="card-compact rounded-lg w-fit bg-neutral text-neutral-content">
+        <div class="card card-sm rounded-lg w-fit bg-neutral text-neutral-content">
           <div class="card-body">
             <div class="relative">
               <h1 class="text-2xl">
@@ -46,13 +46,13 @@
                 class="btn btn-sm btn-primary rounded-lg"
                 @click="saveNote"
               >
-                <i class="ri-save-fill" />
+                <Icon name="ri:save-fill" />
               </button>
               <button
                 class="btn btn-sm btn-error rounded-lg"
                 @click="resetNote"
               >
-                <i class="ri-delete-bin-7-fill" />
+                <Icon name="ri:delete-bin-7-fill" />
               </button>
             </div>
           </div>
@@ -79,7 +79,6 @@ import Text from "@tiptap/extension-text";
 import TaskItem from "@tiptap/extension-task-item";
 import TaskList from "@tiptap/extension-task-list";
 import { useEditor, EditorContent } from "@tiptap/vue-3";
-import "remixicon/fonts/remixicon.css";
 
 useHead({
 	title: "Note-It",

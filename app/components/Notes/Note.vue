@@ -12,7 +12,7 @@
         z-10
       "
     >
-      <div class="card-compact rounded-lg w-fit bg-neutral text-neutral-content">
+      <div class="card card-sm rounded-lg w-fit bg-neutral text-neutral-content">
         <div class="card-body">
           <div class="relative">
             <editor-content :editor="titleEditor" />
@@ -39,20 +39,7 @@
                   class="hidden group-hover:flex btn btn-circle btn-outline btn-xs btn-error ml-1"
                   @click="deleteNoteTag(tag.id)"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                  <Icon name="ri:close-line" class="h-4 w-4" />
                 </button>
               </div>
             </div>
@@ -82,13 +69,13 @@
               class="btn btn-sm btn-primary rounded-lg"
               @click="submitEdit"
             >
-              <i class="ri-save-fill" />
+              <Icon name="ri:save-fill" />
             </button>
             <button
               class="btn btn-sm btn-error rounded-lg"
               @click="$emit('deleteNote', id)"
             >
-              <i class="ri-delete-bin-7-fill" />
+              <Icon name="ri:delete-bin-7-fill" />
             </button>
           </div>
         </div>
@@ -96,7 +83,7 @@
     </div>
     <div
       v-else
-      class="card-compact rounded-lg w-96 bg-neutral text-neutral-content v-0"
+      class="card card-sm rounded-lg w-96 bg-neutral text-neutral-content v-0"
     >
       <div class="card-body">
         <div class="flex">
@@ -118,19 +105,19 @@
             class="btn btn-sm btn-success rounded-lg"
             @click="toggleModal"
           >
-            <i class="ri-edit-box-fill" />
+            <Icon name="ri:edit-box-fill" />
           </button>
           <button
             class="btn btn-sm btn-primary rounded-lg"
             @click="submitEdit"
           >
-            <i class="ri-save-fill" />
+            <Icon name="ri:save-fill" />
           </button>
           <button
             class="btn btn-sm btn-error rounded-lg"
             @click="$emit('deleteNote', id)"
           >
-            <i class="ri-delete-bin-7-fill" />
+            <Icon name="ri:delete-bin-7-fill" />
           </button>
         </div>
       </div>
@@ -259,4 +246,3 @@ async function deleteNoteTag(tagID: number) {
   if (error) console.log(error)
 }
 </script>
-

@@ -6,7 +6,7 @@
       </div>
       <button class="menu-item" :class="{ 'is-active': item.isActive ? item.isActive() : null }" :title="item.title"
         @click="item.action">
-        <i :class="`ri-${item.icon} `" />
+        <Icon :name="`ri:${item.icon}`" />
       </button>
     </div>
   </div>
